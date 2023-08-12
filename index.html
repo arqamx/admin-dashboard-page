@@ -1,16 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
     <title>Admin Dashboard</title>
 </head>
+
 <body>
     <div class="container">
-        <div class="sideBar"></div>
-        <div class="header"></div>
-        <div class="main"></div>
+
+        <div class="sidebar">
+
+            <h1 class="title clickable">
+                <span class="material-icons"> dashboard </span> Dashboard
+            </h1>
+
+            <ul class="nav">
+                <li class="nav-item current">
+                    <a href="#" class="nav-link"> <span class="material-icons"> home </span> Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link"><span class="material-icons-outlined"> account_circle </span> Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link"><span class="material-icons-outlined"> message </span> Messages</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link"><span class="material-icons-outlined"> history </span> History</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link"><span class="material-icons-outlined"> task </span> Tasks</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link"><span class="material-icons-outlined"> groups </span>
+                        Communities</a>
+                </li>
+            </ul>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-link"><span class="material-icons-outlined"> settings </span> Settings</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link"><span class="material-icons-outlined"> help_center </span>
+                        Support</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link"><span class="material-icons-outlined"> verified_user </span>
+                        Privacy</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="header">
+            <div class="top">
+                <div class="search">
+                    <label for="search"><span class="material-icons-outlined search-icon clickable">
+                            search
+                        </span></label>
+                    <input type="text" name="search" id="search" />
+                </div>
+                <div class="account">
+                    <button>
+                        <span class="material-icons-outlined clickable"> notifications_active </span>
+                    </button>
+                    <div class="picture clickable"></div>
+                    <p class="name clickable">John West</p>
+                </div>
+            </div>
+    
+            <div class="bottom">
+                <div class="profile">
+                    <div class="picture clickable"></div>
+                    <div class="profile-name">
+                        <p class="greeting">Hi there,</p>
+                        <p class="name clickable">
+                            John West <span class="username">(@johnwest)</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="btn clickable">New</button>
+                    <button class="btn clickable">Upload</button>
+                    <button class="btn clickable">Share</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="project-display">
+                <h3 class="project-section-heading">Your Projects</h3>
+                <div class="projects-container">
+    
+                    <div class="project">
+                        <div class="project-text">
+                            <div class="project-heading">Super Cool Project</div>
+                            <div class="project-description">Lorem Ipsum nulla pariatur. Ut enim ad minim veniam, quis nostrud exercitation.</div>
+                        </div>
+                        <div class="project-interact-container">
+                            <ul class="interactions">
+                                <li class="interact-option"><img src="./icons/star-plus-outline.svg" alt="favorite post"></li>
+                                <li class="interact-option"><img src="./icons/eye-plus-outline.svg" alt="save post"></li>
+                                <li class="interact-option"><img src="./icons/source-fork.svg" alt="fork project"></li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <div class="project">
+                        <div class="project-text">
+                            <div class="project-heading">Less Cool Project</div>
+                            <div class="project-description">Lorem Ipsum laboris nisi ut aliquip ex ea commodo consequat.</div>
+                        </div>
+                        <div class="project-interact-container">
+                            <ul class="interactions">
+                                <li class="interact-option"><img src="./icons/star-plus-outline.svg" alt="favorite post"></li>
+                                <li class="interact-option"><img src="./icons/eye-plus-outline.svg" alt="save post"></li>
+                                <li class="interact-option"><img src="./icons/source-fork.svg" alt="fork project"></li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <div class="project">
+                        <div class="project-text">
+                            <div class="project-heading">Impossible App</div>
+                            <div class="project-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+                        </div>
+                        <div class="project-interact-container">
+                            <ul class="interactions">
+                                <li class="interact-option"><img src="./icons/star-plus-outline.svg" alt="favorite post"></li>
+                                <li class="interact-option"><img src="./icons/eye-plus-outline.svg" alt="save post"></li>
+                                <li class="interact-option"><img src="./icons/source-fork.svg" alt="fork project"></li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <div class="project">
+                        <div class="project-text">
+                            <div class="project-heading">Easy Peasy App</div>
+                            <div class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                        </div>
+                        <div class="project-interact-container">
+                            <ul class="interactions">
+                                <li class="interact-option"><img src="./icons/star-plus-outline.svg" alt="favorite post"></li>
+                                <li class="interact-option"><img src="./icons/eye-plus-outline.svg" alt="save post"></li>
+                                <li class="interact-option"><img src="./icons/source-fork.svg" alt="fork project"></li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <div class="project">
+                        <div class="project-text">
+                            <div class="project-heading">Ad Blocker</div>
+                            <div class="project-description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                        </div>
+                        <div class="project-interact-container">
+                            <ul class="interactions">
+                                <li class="interact-option"><img src="./icons/star-plus-outline.svg" alt="favorite post"></li>
+                                <li class="interact-option"><img src="./icons/eye-plus-outline.svg" alt="save post"></li>
+                                <li class="interact-option"><img src="./icons/source-fork.svg" alt="fork project"></li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <div class="project">
+                        <div class="project-text">
+                            <div class="project-heading">Money Maker</div>
+                            <div class="project-description">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                        </div>
+                        <div class="project-interact-container">
+                            <ul class="interactions">
+                                <li class="interact-option"><img src="./icons/star-plus-outline.svg" alt="favorite post"></li>
+                                <li class="interact-option"><img src="./icons/eye-plus-outline.svg" alt="save post"></li>
+                                <li class="interact-option"><img src="./icons/source-fork.svg" alt="fork project"></li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+
+            <div class="announcements-section">
+                <div class="announcements-section-heading">Announcements</div>
+                <div class="announcements-container">
+                    <div class="announcement-heading">Site Maintenance</div>
+                    <div class="announcement-description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                    <hr>
+                    <div class="announcement-heading">Community Share Day</div>
+                    <div class="announcement-description">Ut enim ad minim veniam, quis nostrud exercitation.</div>
+                    <hr>
+                    <div class="announcement-heading">Updated Privacy Policy</div>
+                    <div class="announcement-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed.</div>
+                </div>
+            </div>
+
+            <div class="trending-profiles-section">
+                <div class="announcements-section-heading">Trending</div>
+                <div class="trending-container">
+                    <div class="trending-profile clickable">
+                        <div><img class="profile-pic-small" src="./images/catProfilePic.png" alt="trending profile image"></div>
+                        <div class="trending-profile-info">
+                            <div class="trending-username">@tegan</div>
+                            <div class="trending-project">World Peace Builder</div>
+                        </div>
+                    </div>
+                    <div class="trending-profile clickable">
+                        <div><img class="profile-pic-small" src="./images/profilePic.png" alt="trending profile image"></div>
+                        <div class="trending-profile-info">
+                            <div class="trending-username">@johnwest</div>
+                            <div class="trending-project">Super Cool Project</div>
+                        </div>
+                    </div>
+                    <div class="trending-profile clickable">
+                        <div><img class="profile-pic-small" src="./images/pikachuProfilePic.png" alt="trending profile image"></div>
+                        <div class="trending-profile-info">
+                            <div class="trending-username">@kendall</div>
+                            <div class="trending-project">Life Changing App</div>
+                        </div>
+                    </div>
+                    <div class="trending-profile clickable">
+                        <div><img class="profile-pic-small" src="./images/greenCharacterProfilePic.jpeg" alt="trending profile image"></div>
+                        <div class="trending-profile-info">
+                            <div class="trending-username">@alex</div>
+                            <div class="trending-project">No Traffic Maker</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
     </div>
 </body>
+
 </html>
